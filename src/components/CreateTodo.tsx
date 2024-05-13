@@ -12,7 +12,7 @@ const CreateTodo: FC<ICreateTodoProps> = () => {
 
     const handleAdd = () => { addTodo({ id: generateTodoId(), isCompleted: false, title: todo.title, content: todo.content }); setTodo(initState) }
     return (
-        <div className="flex flex-col rounded-lg shadow-lg bg-orange-300 p-4 items-center gap-4 w-[512px] h-[512px]">
+        <div className="flex flex-col rounded-lg shadow-lg bg-orange-300 p-4 items-center gap-4 w-[512px] h-[512px]" data-testid="create-todo-container">
             <div className="flex text-xl font-bold">Create new todo</div>
             <div className="flex flex-col w-full">
                 <label htmlFor="input">Title*</label>
